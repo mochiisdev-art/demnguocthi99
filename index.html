@@ -12,7 +12,15 @@
     <meta name="description" content="Website đếm ngược thời gian thi THPT Quốc Gia 2026 dành riêng cho 2k8.">
 </head>
 <body>
-    <!-- Background Animations -->
+    <!-- Video Background -->
+    <div class="video-bg-container">
+        <video autoplay muted loop playsinline class="video-bg">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+    <!-- Background Animations (keep for layer effect) -->
     <div class="background-animation">
         <div class="blob blob-1"></div>
         <div class="blob blob-2"></div>
@@ -57,6 +65,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Prominent Motto -->
+            <div class="motto-container glass-card" style="margin-top: 3rem; padding: 2.5rem; max-width: 850px; margin-inline: auto;">
+                 <i class="fa-solid fa-quote-left" style="font-size: 2rem; color: var(--accent-pink); margin-bottom: 1rem; display: block;"></i>
+                 <blockquote style="font-family: 'Outfit', sans-serif; font-size: 1.5rem; font-style: italic; color: #f8fafc; line-height: 1.6; margin-bottom: 1rem;">
+                    "Trên thế gian này, không có gì là chắc chắn cả. Nếu thất bại, đơn giản là ta chưa đủ mạnh hoặc chuẩn bị chưa đủ kỹ. Chết trên con đường mình đã chọn, cũng là một loại viên mãn."
+                 </blockquote>
+                 <p style="color: var(--accent-blue); font-weight: 700; font-size: 1.1rem;">- Cố lên 2k8, Đại Học đang vẫy gọi! -</p>
+            </div>
         </section>
 
         <!-- Official Schedule Section -->
@@ -93,28 +110,7 @@
             </div>
         </section>
 
-        <!-- Motivational Quote -->
-        <section class="knowledge-base-section">
-             <div class="quote-card glass-card">
-                 <i class="fa-solid fa-quote-left"></i>
-                 <blockquote>"Trên thế gian này, không có gì là chắc chắn cả. Nếu thất bại, đơn giản là ta chưa đủ mạnh hoặc chuẩn bị chưa đủ kỹ. Chết trên con đường mình đã chọn, cũng là một loại viên mãn."</blockquote>
-                 <p>- Cố lên 2k8, Đại Học đang vẫy gọi!</p>
-             </div>
-        </section>
-
-        <!-- Video Section -->
-        <section class="video-section" style="margin: 4rem 0 8rem 0;">
-             <div class="video-card glass-card" style="padding: 2rem; max-width: 900px; margin: 0 auto; text-align: center;">
-                 <video controls width="100%" style="border-radius: 16px; border: 1px solid var(--glass-border); box-shadow: 0 8px 32px 0 rgba(0,0,0,0.3);">
-                     <source src="video.mp4" type="video/mp4">
-                     Trình duyệt của bạn không hỗ trợ thẻ video.
-                 </video>
-                 <p style="margin-top: 1.5rem; color: var(--text-secondary); font-weight: 500; font-size: 1.1rem; font-style: italic;">
-                     <i class="fa-solid fa-fire" style="color: var(--accent-pink); margin-right: 8px;"></i>
-                     Lửa thử vàng, gian nan thử sức!
-                 </p>
-             </div>
-        </section>
+        <!-- Video Section (Old section removed, moved to background) -->
     </main>
 
     <!-- Footer -->
