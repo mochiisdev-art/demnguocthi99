@@ -18,13 +18,17 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: var(--bg-primary);
+}
+
 body {
     font-family: 'Inter', sans-serif;
-    background-color: var(--bg-primary);
     color: var(--text-primary);
     overflow-x: hidden;
     line-height: 1.6;
     position: relative;
+    background: transparent !important;
 }
 
 /* Video Background */
@@ -63,7 +67,8 @@ body {
     height: 100vh;
     z-index: -1;
     overflow: hidden;
-    background: radial-gradient(circle at center, #0a0a1a 0%, #020205 100%);
+    background: transparent; /* Was obscuring the video */
+    pointer-events: none;
 }
 
 .blob {
